@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const targetDate = new Date('September 21, 2024 12:00:00').getTime();
 
+  const formatNumber = (num) => num.toString().padStart(2, '0');
   // Відмінювання чисел
   const getDayLabel = (count) => {
     if (count === 1) return 'День';
@@ -77,10 +78,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    daysElement.textContent = days;
-    hoursElement.textContent = hours;
-    minutesElement.textContent = minutes;
-    secondsElement.textContent = seconds;
+    daysElement.textContent = formatNumber(days);
+    hoursElement.textContent = formatNumber(hours);
+    minutesElement.textContent = formatNumber(minutes);
+    secondsElement.textContent = formatNumber(seconds);
 
     daysLabel.textContent = getDayLabel(days);
     hoursLabel.textContent = getHourLabel(hours);
@@ -89,10 +90,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     if (distance < 0) {
       clearInterval(countdown);
-      daysElement.textContent = '0';
-      hoursElement.textContent = '0';
-      minutesElement.textContent = '0';
-      secondsElement.textContent = '0';
+      daysElement.textContent = '00';
+      hoursElement.textContent = '00';
+      minutesElement.textContent = '00';
+      secondsElement.textContent = '00';
       daysLabel.textContent = 'Дні';
       hoursLabel.textContent = 'Години';
       minutesLabel.textContent = 'Хвилини';
