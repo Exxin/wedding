@@ -3,7 +3,7 @@ html {
 }
 .header-container {
   display: flex;
-  background-color: #abd3b9;
+  background-color: #f5f5dc;
   /* background-color: #1c2225; */
   justify-content: space-between;
 
@@ -15,7 +15,7 @@ html {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(180deg, #abd3b9 91%, transparent 101%);
+  background: linear-gradient(180deg, #f5f5dc 91%, transparent 101%);
 }
 
 .page-nav {
@@ -176,4 +176,16 @@ html {
   margin-top: 187px;
   margin-right: 20px;
 }
+
+.is-open-mob {
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: auto;
+}
+
+.mobile-menu.is-open-mob {
+  pointer-events: none;
+  opacity: 1;
+}
+
 
