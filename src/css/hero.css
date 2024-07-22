@@ -4,11 +4,16 @@
     padding-top: 60px;
 }
 
+.container.hero-box {
+  padding: 0 0;
+}
+
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: #15512a;
 }
 
 .hero-img-box-1 {
@@ -32,7 +37,7 @@
   height: 477px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .head-second-box {
