@@ -16,8 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" crossorigin src="/wedding/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/wedding/assets/index-8c834db3.css">
+    <link rel="stylesheet" href="/wedding/assets/index-23899ef6.css">
   </head>
   <body>
     <header class="head">
@@ -68,7 +69,7 @@
           data-modal-mobile-open
         >
           <svg class="solid-menu" width="44" height="30">
-            <use href="/wedding/assets/svg-images-3233bd5e.svg#icon-burger"></use>
+            <use href="/wedding/assets/svg-images-6b5d1f40.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
@@ -86,7 +87,7 @@
       data-modal-mobile-close
     >
       <svg class="close-menu" width="36" height="36">
-        <use href="/wedding/assets/svg-images-3233bd5e.svg#icon-x"></use>
+        <use href="/wedding/assets/svg-images-6b5d1f40.svg#icon-x"></use>
       </svg>
     </button>
   </div>
@@ -281,188 +282,17 @@
       <section class="collect" id="our-collection">
   <div class="container collect-box">
     <h2 class="collect-title">Галерея</h2>
-    <div class="slider-container">
-      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <div class="slider-container" id="slider">
+      <a class="control-next">&#10095;</a>
+      <a class="control-prev">&#10094;</a>
       <ul class="collect-list">
-        <li class="collect-item">
-          <div class="collect-img-box">
-            <picture>
-              <source
-                srcset="/wedding/assets/collect_1-desk-2-x1-0702027e.jpg 1x, /wedding/assets/collect_1-desk-2-x2-8a55273b.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_1-desk-8dc3acf6.jpg 1x, /wedding/assets/collect_1-desk-2x-2e8daf66.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_1-tab-1-affd7bed.jpg 1x, /wedding/assets/collect_1-tab-2-2x-d9560440.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile-1x-335/collect_1-mob-1.jpg    1x,
-                  ./images/mobile-2x-335/collect_1-mob-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/mobile-1x-335/collect_1-mob-1.jpg"
-                alt="AUGUST Poltava women's blouseRING"
-              />
-            </picture>
-          </div>
-        </li>
-        <li class="collect-item">
-          <div class="collect-img-box">
-            <picture>
-              <source
-                srcset="/wedding/assets/collect_2-desk-2-x1-992d6a37.jpg 1x, /wedding/assets/collect_2-desk-2-x2-09335ba7.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_2-desk-02b24346.jpg 1x, /wedding/assets/collect_2-desk-2x-00d770f8.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_2-tab-1-a9e8f833.jpg 1x, /wedding/assets/collect_2-tab-2-2x-7ced1a1c.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile-1x-335/collect_2-mob-1.jpg    1x,
-                  ./images/mobile-2x-335/collect_2-mob-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/mobile-1x-335/collect_2-mob-1.jpg "
-                alt="Women's blouse Gorgany"
-              />
-            </picture>
-          </div>
-        </li>
-        <li class="collect-item">
-          <div class="collect-img-box">
-            <picture>
-              <source
-                srcset="/wedding/assets/collect_3-desk-2-x1-873d2d27.jpg 1x, /wedding/assets/collect_3-desk-2-x2-cdff9359.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_3-desk-eb59d49e.jpg 1x, /wedding/assets/collect_3-desk-2x-43774f1f.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_3-tab-1-a7fdc355.jpg 1x, /wedding/assets/collect_3-tab-2-2x-06f138ff.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile-1x-335/collect_3-mob-1.jpg    1x,
-                  ./images/mobile-2x-335/collect_3-mob-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/mobile-1x-335/collect_3-mob-1.jpg"
-                alt="Women's blouse Crimea"
-              />
-            </picture>
-          </div>
-        </li>
-        <li class="collect-item">
-          <div class="collect-img-box">
-            <picture>
-              <source
-                srcset="/wedding/assets/collect_4-desk-2-x1-a86e78c5.jpg 1x, /wedding/assets/collect_4-desk-2-x2-63108c5f.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_4-desk-5ec33135.jpg 1x, /wedding/assets/collect_4-desk-2x-04128303.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_4-tab-1-357cee2b.jpg 1x, /wedding/assets/collect_4-tab-2-2x-9ff6c4f6.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile-1x-335/collect_4-mob-1.jpg    1x,
-                  ./images/mobile-2x-335/collect_4-mob-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/mobile-1x-335/collect_4-mob-1.jpg "
-                alt="Men's shirt Verkhovina"
-                width="280"
-              />
-            </picture>
-          </div>
-        </li>
-        <li class="collect-item">
-          <div class="collect-img-box">
-            <picture>
-              <source
-                srcset="/wedding/assets/collect_5-desk-2-x1-c0433df8.jpg 1x, /wedding/assets/collect_5-desk-2-x2-a19943d6.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_5-desk-d9bcd890.jpg 1x, /wedding/assets/collect_5-desk-2x-a7a161ab.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_5-tab-1-582cbe39.jpg 1x, /wedding/assets/collect_5-tab-2-2x-1f275d5b.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile-1x-335/collect_5-mob-1.jpg    1x,
-                  ./images/mobile-2x-335/collect_5-mob-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/mobile-1x-335/collect_5-mob-1.jpg"
-                alt="Mountain men's shirt"
-                width="280"
-              />
-            </picture>
-          </div>
-        </li>
-        <li class="collect-item">
-          <div class="collect-img-box">
-            <picture>
-              <source
-                srcset="/wedding/assets/collect_6-desk-2-x1-b2df0436.jpg 1x, /wedding/assets/collect_6-desk-2-x2-5858a68e.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_6-desk-1a05cf9e.jpg 1x, /wedding/assets/collect_6-desk-2x-c7dd5fce.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="/wedding/assets/collect_6-tab-1-319de956.jpg 1x, /wedding/assets/collect_6-tab-2-2x-e270e067.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile-1x-335/collect_6-mob-1.jpg    1x,
-                  ./images/mobile-2x-335/collect_6-mob-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/mobile-1x-335/collect_6-mob-1.jpg"
-                alt="Men's shirt Yasen"
-                width="280"
-              />
-            </picture>
-          </div>
-        </li>
+        <li class="collect-item">1</li>
+        <li class="collect-item" style="background: #aaa">2</li>
+        <li class="collect-item">3</li>
+        <li class="collect-item" style="background: #aaa">4</li>
+        <li class="collect-item">5</li>
+        <li class="collect-item" style="background: #aaa">6</li>
       </ul>
-      <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
   </div>
   <!-- <div class="collect-bg"></div> -->
@@ -497,7 +327,7 @@
         <textarea class="comments" required placeholder="Comments"></textarea>
         <button class="button" type="submit">
           Send<svg class="icon" width="24" height="16">
-            <use href="/wedding/assets/svg-images-3233bd5e.svg#icon-arrow"></use>
+            <use href="/wedding/assets/svg-images-6b5d1f40.svg#icon-arrow"></use>
           </svg>
         </button>
       </form>
