@@ -29,6 +29,10 @@
   text-align: center;
 }
 
+.hero-txt.txt-two {
+  color: #FCF9F9;
+}
+
 .img {
 }
 
@@ -200,7 +204,7 @@
   display: flex;
   justify-content: space-around;
   width: 80%;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .time-item {
