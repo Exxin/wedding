@@ -1,18 +1,4 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-open');
-  }
-})();
-(() => {
   const refsTwo = {
     openModalBtn: document.querySelector('[data-modal-mobile-open]'),
     closeModalBtn: document.querySelector('[data-modal-mobile-close]'),
@@ -48,11 +34,4 @@ test.classList.replace("special", "regular");
 console.log(test.classList);
 
 // ============================================================
-// Change settings for style elements
-const txt = document.querySelector(".entry-title");
-txt.textContent = 'Hell o f MotherFuker'
-// entry-title
-
-txt.style.color = "#434455";
-
 // ============================================================
