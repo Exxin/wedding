@@ -18,15 +18,16 @@
 }
 
 .about-title {
-font-size: 32px;
-font-weight: 500;
-line-height: 1.38;
-letter-spacing: -0.03em;
-margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
 }
 
 .about-text {
-    color: rgba(252, 249, 249, 0.40);
+    color: rgba(0, 0, 0, 0.4);
 font-size: 14px;
 font-weight: 400;
 line-height: normal;
@@ -37,7 +38,7 @@ margin-bottom: 20px;
 @media screen and (min-width: 768px) {
 
     .about {
-        padding-top: 100px; 
+        padding-top: 100px;
         padding-bottom: 82px;
         background-size: 544px 484px;
         background-position: right -175px top 573px;
@@ -45,18 +46,18 @@ margin-bottom: 20px;
     .about-box {
         gap: 40px;
     }
-    
+
     .about-title {
     font-size: 44px;
     line-height: 1.45;
     }
-    
+
     .about-text {
     font-size: 16px;
     margin-bottom: 20px;
     }
   }
-  
+
   @media screen and (min-width: 1280px) {
 
     .about {
@@ -74,7 +75,7 @@ margin-bottom: 20px;
     .about-description {
         width: 436px;
     }
-    
+
   }
-  
+
   @media (min-width: 1440px) {}
