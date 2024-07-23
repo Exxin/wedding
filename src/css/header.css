@@ -112,6 +112,7 @@ html {
 
 /* =============== Mobile menu ==================== */
 .mobile-menu {
+  box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75);
   background-color: #abd3b9;
   position: fixed;
   z-index: 999999;
