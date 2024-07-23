@@ -140,12 +140,13 @@ html {
 /* =============================================================== */
 
 .mobile-tel-links {
-  display: flex;
-  gap: 10px;
-  padding-top: 20px;
-  padding-right: 15px;
-  flex-direction: row;
-  justify-content: flex-end;
+    display: flex;
+      gap: 10px;
+      padding-top: 20px;
+      padding-right: 15px;
+      padding-left: 20px;
+      flex-direction: column;
+      justify-content: flex-end;
 }
 
 /* =================================================== */
