@@ -141,13 +141,17 @@ html {
 
 .mobile-tel-links {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+  padding-top: 20px;
+  padding-right: 15px;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /* =================================================== */
 .mobile-menu-tel-close {
   display: flex;
+  flex-direction: row-reverse;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
