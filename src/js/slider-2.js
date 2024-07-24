@@ -1,10 +1,10 @@
 jQuery(document).ready(function ($) {
 
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 4000);
-  });
+  // $('#checkbox').change(function(){
+  //   setInterval(function () {
+  //       moveRight();
+  //   }, 4000);
+  // });
 
 	var slideCount = $('#slider .collect-list .collect-item').length;
 	var slideWidth = $('#slider .collect-list .collect-item').width();
@@ -34,6 +34,10 @@ jQuery(document).ready(function ($) {
             $('#slider .collect-list').css('left', '');
         });
     };
+
+      // setInterval(function () {
+      //   moveRight();
+      // }, 5000);
 
     $('a.control-prev').click(function () {
         moveLeft();
