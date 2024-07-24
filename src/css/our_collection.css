@@ -73,7 +73,8 @@ img {
 
 .collect {
     padding-top: 18px;
-    height: 430px;
+    /* height: 430px; */
+      padding-bottom: 20px;
 }
 
 .collect-description {
@@ -117,6 +118,10 @@ img {
 }
 
 /* ================================================================ */
+
+.slider-container {
+  padding-bottom: 20px;
+}
 #slider {
   position: relative;
   overflow: hidden;
@@ -139,7 +144,7 @@ img {
   margin: 0;
   padding: 0;
   width: 375px;
-  height: 300px;
+  height: 296px;
   background: #ccc;
   text-align: center;
   line-height: 300px;
