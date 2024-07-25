@@ -1,46 +1,89 @@
-let slideIndex = 0;
+$('.slider').each(function() {
+  var $this = $(this);
+  var $group = $this.find('.slide_group');
+  var $slides = $this.find('.slide');
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
 
-function changeSlide(n) {
-  const slides = document.querySelectorAll('.collect-item');
-  slideIndex += n;
+  function move(newIndex) {
+    var animateLeft, slideLeft;
 
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  } else if (slideIndex < 0) {
-    slideIndex = slides.length - 1;
+    advance();
+
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
+
+    bulletArray[currentIndex].removeClass('active');
+    bulletArray[newIndex].addClass('active');
+
+    if (newIndex > currentIndex) {
+      slideLeft = '100%';
+      animateLeft = '-100%';
+    } else {
+      slideLeft = '-100%';
+      animateLeft = '100%';
+    }
+
+    $slides.eq(newIndex).css({
+      display: 'block',
+      left: slideLeft
+    });
+    $group.animate({
+      left: animateLeft
+    }, function() {
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
+      $slides.eq(newIndex).css({
+        left: 0
+      });
+      $group.css({
+        left: 0
+      });
+      currentIndex = newIndex;
+    });
   }
 
-  const slider = document.querySelector('.collect-list');
-  slider.style.transform = `translateX(${-slideIndex * 100}%)`;
-}
-
-// Swipe functionality
-let startX;
-
-function startTouch(e) {
-  startX = e.touches[0].clientX;
-}
-
-function moveTouch(e) {
-  if (!startX) {
-    return;
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 4000);
   }
 
-  let currentX = e.touches[0].clientX;
-  let diffX = startX - currentX;
+  $('.next_btn').on('click', function() {
+    if (currentIndex < ($slides.length - 1)) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
 
-  if (diffX > 0) {
-    // Swiped left
-    changeSlide(1);
-  } else {
-    // Swiped right
-    changeSlide(-1);
-  }
+  $('.previous_btn').on('click', function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
 
-  startX = null;
-}
+  $.each($slides, function(index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
 
-// Add event listeners for swipe functionality
-const slider = document.querySelector('.collect-list');
-slider.addEventListener('touchstart', startTouch, false);
-slider.addEventListener('touchmove', moveTouch, false);
+    if (index === currentIndex) {
+      $button.addClass('active');
+    }
+    $button.on('click', function() {
+      move(index);
+    }).appendTo('.slide_buttons');
+    bulletArray.push($button);
+  });
+
+  advance();
+});

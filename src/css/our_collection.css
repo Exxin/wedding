@@ -53,6 +53,7 @@ img {
 .container.collect-box {
   width: 100%;
   padding: 0 0 0 0;
+  height: 440px;
 }
 
 /* .collect-list {
@@ -115,6 +116,8 @@ img {
     white-space: nowrap;
     text-align: left;
     text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-left: 20px;
 }
 
 /* ================================================================ */
@@ -218,7 +221,122 @@ a.control-next {
     }
 }
 
-/* ================ 768px ================== */
+/* ================ slider-v.2 ================== */
+.slider {
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.slide_viewer {
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+    display: block;
+    background-image: url(/images/mobile-1x-335/gallery_1.jpg);
+    background-repeat: no-repeat;
+    background-position: -33px 0px;
+    background-size: contain;
+    height: 296px;
+    width: 462px;
+}
+
+.slide:nth-of-type(2) {
+  background: #F4E4CD;
+}
+
+.slide:nth-of-type(3) {
+  background: #C75534;
+}
+
+.slide:nth-of-type(4) {
+  background: #D1D1D4;
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active,
+.slide_btn:hover {
+  color: #FCF9F9;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 355px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 0px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.previous_btn,
+.next_btn {
+  cursor: pointer;
+  height: 40px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 40px;
+}
+
+.previous_btn:hover,
+.next_btn:hover {
+  opacity: 1;
+}
 
 /* ================ 1280px ================== */
 
