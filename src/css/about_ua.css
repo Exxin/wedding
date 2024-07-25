@@ -25,6 +25,22 @@
   letter-spacing: -0.03em;
   margin-bottom: 40px;
 }
+.about-title-box {
+      width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+}
+
+.line-about {
+background-color: rgba(0, 0, 0, 0.4);
+  width: 90px;
+    height: 5px;
+    /* margin-right: 20px; */
+    margin-bottom: 30px;
+}
 
 .about-text {
     color: rgba(0, 0, 0, 0.4);
