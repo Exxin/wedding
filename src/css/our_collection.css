@@ -252,12 +252,12 @@ a.control-next {
 
 .slide:nth-of-type(1) {
     display: block;
-    background-image: url(/images/mobile-1x-335/gallery_1.jpg);
-    background-repeat: no-repeat;
-    background-position: -33px 0px;
-    background-size: contain;
-    height: 296px;
-    width: 462px;
+      background-image: url(/images/mobile-1x-335/gallery_1.jpg);
+      background-repeat: no-repeat;
+      background-position: -43px -5px;
+      background-size: contain;
+      height: 375px;
+      width: 488px;
 }
 
 .slide:nth-of-type(2) {
