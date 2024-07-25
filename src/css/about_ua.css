@@ -35,47 +35,7 @@ letter-spacing: -0.04em;
 margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+.about-box picture img{
+  box-shadow: 2px 4px 19px 2px rgba(0, 0, 0, 0.75);
+}
 
-    .about {
-        padding-top: 100px;
-        padding-bottom: 82px;
-        background-size: 544px 484px;
-        background-position: right -175px top 573px;
-    }
-    .about-box {
-        gap: 40px;
-    }
-
-    .about-title {
-    font-size: 44px;
-    line-height: 1.45;
-    }
-
-    .about-text {
-    font-size: 16px;
-    margin-bottom: 20px;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-
-    .about {
-        padding-top: 150px;
-        padding-bottom: 132px;
-        background-size: 545px 484px;
-        background-position: right -160px top 291px;
-    }
-
-    .about-box {
-        flex-direction: row;
-        gap: 50px;
-    }
-
-    .about-description {
-        width: 436px;
-    }
-
-  }
-
-  @media (min-width: 1440px) {}
