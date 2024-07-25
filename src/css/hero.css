@@ -15,6 +15,9 @@
   overflow: hidden;
   background-color: #15512a;
   box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75);
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
+  border-radius: 8px;
 }
 
 .hero-img-box-1 {
