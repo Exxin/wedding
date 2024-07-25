@@ -54,7 +54,7 @@ $('.slider').each(function() {
       } else {
         move(0);
       }
-    }, 50000);
+    }, 5000);
   }
 
   $('.next_btn').on('click', function() {
