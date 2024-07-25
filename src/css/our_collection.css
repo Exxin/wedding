@@ -325,7 +325,7 @@ a.slide_btn {
 .previous_btn,
 .next_btn {
   /* background-color: #15512a9a; */
-  /* border-radius: 50%; */
+  border-radius: 50%;
   cursor: pointer;
   height: 40px;
   opacity: 0.5;
