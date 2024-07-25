@@ -292,6 +292,24 @@ a.control-next {
   height: 625px;
   width: 488px;
 }
+.slide:nth-of-type(5) {
+  display: block;
+  background-image: url(/images/mobile-1x-335/gallery_5.jpg);
+  background-repeat: no-repeat;
+  background-position: -79px -5px;
+  background-size: contain;
+  height: 375px;
+  width: 488px;
+}
+.slide:nth-of-type(6) {
+  display: block;
+  background-image: url(/images/mobile-1x-335/gallery_6.jpg);
+    background-repeat: no-repeat;
+      background-position: -82px 0px;
+      background-size: contain;
+      height: 609px;
+      width: 479px;
+}
 
 .slide_buttons {
   left: 0;
