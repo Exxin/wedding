@@ -23,11 +23,15 @@
   justify-content: center;
 }
 .hero-txt {
-  color: #FCF9F9;
+  color: #6d927a;
   padding-left: auto;
   padding-top: 10px;
   padding-right: auto;
   text-align: center;
+}
+
+.hero-txt.two {
+  color: #f5f5dc;
 }
 
 .head-first-box {
