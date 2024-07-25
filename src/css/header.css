@@ -3,7 +3,7 @@ html {
 }
 .header-container {
   display: flex;
-  background-color: #f5f5dc;
+  background-color: #ffffe9;
   /* background-color: #1c2225; */
   justify-content: space-between;
 }
@@ -14,7 +14,7 @@ html {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(180deg, #f5f5dc 91%, transparent 101%);
+  background: linear-gradient(180deg, #ffffe9 91%, transparent 101%);
 }
 
 .page-nav {
