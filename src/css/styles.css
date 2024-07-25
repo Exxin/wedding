@@ -15,9 +15,13 @@
 
 
 body {
-  font-family: 'Manrope', sans-serif;
+  /* font-family: 'Manrope', sans-serif; */
   background: #f5f5dc;
   color: #FCF9F9;
+
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
