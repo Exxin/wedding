@@ -1,50 +1,26 @@
 <section class="box" id="your-order">
   <div class="container order">
     <div class="right">
-      <div class="title">
-        <h1 class="your_order_test">
-          <span class="yellow">Your order</span> is our priority: Personalized
-          approach and quality of service
-        </h1>
+      <div class="title-box">
+        <h1 class="your_order_test">Як дістатись до події</h1>
+        <div class="line-about"></div>
       </div>
-      <form>
-        <div class="column">
-          <input
-            class="text"
-            type="text"
-            pattern="[0-15]{16}"
-            required
-            placeholder="Enter your full name"
-          />
-          <input
-            class="text"
-            type="text"
-            pattern="[0-20]{21}"
-            required
-            placeholder="Enter your email"
-          />
-        </div>
-        <textarea class="comments" required placeholder="Comments"></textarea>
-        <button class="button" type="submit">
-          Send<svg class="icon" width="24" height="16">
-            <use href="./images/svg-images.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </form>
+    </div>
+
+    <div style="width: 100%; height: 500px">
+      <iframe
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border: 0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCi4dNRS1SCcDp40cvzhOx-Wrnnae_Ji1c&q=8QC3+7C,Veresy,Zhytomyrska+oblast,Ukraine"
+        allowfullscreen
+      >
+      </iframe>
     </div>
     <picture>
-      <!-- зображення для (пк) -->
       <source
-        media="(min-width: 1280px)"
-        type="image/jpg"
-        srcset="
-          ./images/desktop-1-1x-1280/your_order-1-desk.jpg,
-          ./images/desktop-1-2x-1280/your_order-1-desk-x2.jpg
-        "
-      />
-      <!-- зображення для (планшет) -->
-      <source
-        media="(min-width: 768px)"
+        media="(max-width: 768px)"
         type="image/jpg"
         srcset="./images/tablet-2x-704/your_order-1-tab-2-2x.jpg"
       />

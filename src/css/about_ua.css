@@ -35,8 +35,8 @@
 }
 
 .line-about {
-background-color: rgba(0, 0, 0, 0.4);
-  width: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90px;
     height: 2px;
     /* margin-right: 20px; */
     margin-bottom: 33px;

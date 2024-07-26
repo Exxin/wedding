@@ -1,41 +1,51 @@
 /* ======== MOBILE========= */
 
 .your_order_test {
-    color: #FCF9F9;
+    color: rgba(0, 0, 0, 0.4);
     font-size: 32px;
     font-weight: 500;
     line-height: 44px;
-    letter-spacing: -0.96px; 
+    letter-spacing: -0.96px;
     padding-bottom: 40px;
+    padding-top: 18px;
 
 }
+
+.title-box{
+      width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+}
+
+.title-box .line-about {
+  margin-bottom: 20px;
+}
+
 .img{
     display: none;
 }
+
 .order{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.yellow{
-    color: #ECD979;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: -0.96px; 
-}
+
 .text{
     color: rgba(252, 249, 249, 0.50);
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.28px; 
+    letter-spacing: -0.28px;
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     display: flex;
     width:100%;
     padding: 14px 16px;
     align-items: flex-start;
-    gap: 8px; 
+    gap: 8px;
     background-color: transparent;
 }
 
@@ -44,7 +54,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    align-self: stretch; 
+    align-self: stretch;
 
 }
 
@@ -55,7 +65,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.56px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     background-color: transparent;
     margin-left:auto;
     margin-right: auto;
@@ -64,7 +74,7 @@
     padding: 14px 36px;
     justify-content: center;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,14 +99,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.28px; 
+    letter-spacing: -0.28px;
     background-color: transparent;
     display: flex;
     padding: 14px 16px;
     align-items: flex-start;
     gap: 8px;
     flex: 1 0 0;
-    align-self: stretch; 
+    align-self: stretch;
     border-radius: 8px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     width: 100%;
@@ -114,137 +124,3 @@
     }
   }
 /* ======== MOBILE========= */
-
-/* ======== TABLET========= */
-@media screen and (min-width: 768px) {
-    .container {
-      padding: 0 32px;
-      width: 768px;
-    }
-    .title{
-        width: 542px;
-        height: 174px;
-        text-align: start;
-        margin-bottom: 40px;
-    }
-    .your_order_test{
-        font-size: 44px;
-        line-height: 58px; /* 131.818% */
-        letter-spacing: -1.32px; 
-    }
-    .yellow{
-        font-size: 44px;
-        line-height: 58px;
-        letter-spacing: -1.32px; 
-    }
-    
-    
-    .box{
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(../images/icon-grey.png);
-        background-size: 545px 484px;
-        background-repeat: no-repeat;
-        background-position: -210px bottom;
-    }
-    .text{
-        font-size: 16px;
-        letter-spacing: -0.32px; 
-        width: 508px;
-        height: 50px;
-
-    }
-    .comments{
-        font-size: 16px;
-        letter-spacing: -0.32px; 
-        width: 508px;
-    }
-    .button{
-        display: flex;
-        width: 168px;
-        padding: 14px 39px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px; 
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-    .img{
-        display: flex;
-        margin-left: 98px;
-        margin-right: 32px;
-        width: 638px;
-        height: 521px;
-        flex-shrink: 0; 
-        border-radius: 4px;
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    }
-  }
-/* ======== TABLET========= */
-
-/* ========  DESKTOP 1280========= */
-@media screen and (min-width: 1280px) {
-    .container {
-      padding: 0 100px;
-      width: 1280px;
-    }
-    .right{
-        display: flex;
-        flex-direction: column;
-        padding-left: 32px;
-    }
-  
-    .box{
-        padding-bottom: 75px;
-        display: flex;
-    }
-    .order{
-        flex-wrap: nowrap;
-        flex-direction:row-reverse;
-        display: flex;
-    }
-    .img{
-        display: flex;
-        margin-right:32px;
-        margin-left: 0;
-        width: 524px;
-    }
-    .box{
-        display: flex;
-        flex-direction: column;
-        background-image: url(../images/icon-grey.png);
-        background-size: 545px 484px;
-        background-repeat: no-repeat;
-        background-position: -210px;
-    }
-
-    .button:hover,
-    .button:focus {
-        border-color: #ECD979;
-        border-radius: 0;
-        background-color: rgba(252, 249, 249, 0.1);
-    }
-
-    .icon {
-        transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .button:hover .icon,
-    .button:focus .icon {
-        transform: rotate(30deg);
-    }
-  }
-/* ========  DESKTOP========= */
-
-/* ========  DESKTOP 1440========= */
-@media screen and (min-width: 1440px) {
-    .container {
-      width: 1440px;
-    }
-    .title{
-        width: 666px;
-    }
-  }
-
-/* ========  DESKTOP 1440========= */
