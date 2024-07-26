@@ -55,6 +55,7 @@ html {
 .mobile-tel-container {
   display: flex;
   padding-top: 20px;
+  padding-bottom: 7px;
 }
 .tel-link {
   display: none;
