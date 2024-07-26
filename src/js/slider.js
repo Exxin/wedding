@@ -100,7 +100,7 @@ $('.slider').each(function() {
       move(currentIndex - 1);
     } else {
       // Якщо поточний слайд перший, перейти до останнього
-      move(5); // Змінив на 5, бо тепер слайдів 6
+      move($slides.length - 1); // Змінив на ($slides.length - 1), бо тепер слайдів 6
     }
   });
 
