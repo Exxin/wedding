@@ -6,15 +6,21 @@ html {
   background-color: #ffffe9;
   /* background-color: #1c2225; */
   justify-content: space-between;
+  /* box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75); */
+  /* border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; */
 }
 
 .head {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 100;
-  background: linear-gradient(180deg, #ffffe9 91%, transparent 101%);
+  z-index: 999;
+  /* background: linear-gradient(180deg, #ffffe9 91%, transparent 101%); */
+  box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .page-nav {
@@ -55,7 +61,7 @@ html {
 .mobile-tel-container {
   display: flex;
   padding-top: 20px;
-  padding-bottom: 7px;
+  padding-bottom: 13px;
 }
 .tel-link {
   display: none;
