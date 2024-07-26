@@ -7,20 +7,21 @@ html {
   /* background-color: #1c2225; */
   justify-content: space-between;
   /* box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75); */
-  /* border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px; */
+}
+
+.container.header-container {
+  width: 390px;
+  max-width: 390px;
 }
 
 .head {
   /* padding-bottom: 10px; */
   width: 100%;
-  position: sticky;
+  position:fixed;
   top: 0;
   z-index: 999;
   /* background: linear-gradient(180deg, #ffffe9 91%, transparent 101%); */
   box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75);
-  border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 .page-nav {
