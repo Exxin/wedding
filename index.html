@@ -24,7 +24,7 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" crossorigin src="/wedding/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/wedding/assets/index-c1e0f08c.css">
+    <link rel="stylesheet" href="/wedding/assets/index-4836b6ef.css">
   </head>
   <body>
     <header class="head">
@@ -115,12 +115,12 @@
     </li>
     <li>
       <a href="#your-order" class="nav-link-mobile" nav-link-mobile-close-3
-        >customer order</a
+        >Місце проведення</a
       >
     </li>
     <li>
       <a href="#testimonials" class="nav-link-mobile" nav-link-mobile-close-4
-        >testimonials</a
+        >Програма весілля</a
       >
     </li>
   </ul>
@@ -363,50 +363,26 @@
       <section class="box" id="your-order">
   <div class="container order">
     <div class="right">
-      <div class="title">
-        <h1 class="your_order_test">
-          <span class="yellow">Your order</span> is our priority: Personalized
-          approach and quality of service
-        </h1>
+      <div class="title-box">
+        <h1 class="your_order_test">Як дістатись до події</h1>
+        <div class="line-about"></div>
       </div>
-      <form>
-        <div class="column">
-          <input
-            class="text"
-            type="text"
-            pattern="[0-15]{16}"
-            required
-            placeholder="Enter your full name"
-          />
-          <input
-            class="text"
-            type="text"
-            pattern="[0-20]{21}"
-            required
-            placeholder="Enter your email"
-          />
-        </div>
-        <textarea class="comments" required placeholder="Comments"></textarea>
-        <button class="button" type="submit">
-          Send<svg class="icon" width="24" height="16">
-            <use href="/wedding/assets/svg-images-6b5d1f40.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </form>
+    </div>
+
+    <div style="width: 100%; height: 500px">
+      <iframe
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border: 0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCi4dNRS1SCcDp40cvzhOx-Wrnnae_Ji1c&q=8QC3+7C,Veresy,Zhytomyrska+oblast,Ukraine"
+        allowfullscreen
+      >
+      </iframe>
     </div>
     <picture>
-      <!-- зображення для (пк) -->
       <source
-        media="(min-width: 1280px)"
-        type="image/jpg"
-        srcset="
-          ./images/desktop-1-1x-1280/your_order-1-desk.jpg,
-          ./images/desktop-1-2x-1280/your_order-1-desk-x2.jpg
-        "
-      />
-      <!-- зображення для (планшет) -->
-      <source
-        media="(min-width: 768px)"
+        media="(max-width: 768px)"
         type="image/jpg"
         srcset="./images/tablet-2x-704/your_order-1-tab-2-2x.jpg"
       />
@@ -486,21 +462,18 @@
   <div class="container">
     <div class="nav-list-foot">
       <ul class="foot-list-box">
-        <li><a href="#about-us" class="nav-link-foot">About us</a></li>
+        <li><a href="#hero" class="nav-link-foot">Головна</a></li>
         <li>
-          <a href="#our-collection" class="nav-link-foot">Our collection</a>
+          <a href="#about-us" class="nav-link-foot">Про нас</a>
         </li>
       </ul>
       <ul class="foot-list-box">
-        <li><a href="#your-order" class="nav-link-foot">customer order</a></li>
-        <li><a href="#testimonials" class="nav-link-foot">testimonials</a></li>
+        <li><a href="#our-collection" class="nav-link-foot">Галерея</a></li>
+        <li>
+          <a href="#your-order" class="nav-link-foot">Місце проведення</a>
+        </li>
       </ul>
     </div>
-    <h2 class="foot-title">
-      A touch of
-      <span class="foot-title-accent-color">Ukrainian</span> culture in every
-      embroidery
-    </h2>
   </div>
 </footer>
 
