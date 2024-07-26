@@ -100,7 +100,7 @@ $('.slider').each(function() {
       move(currentIndex - 1);
     } else {
       // Якщо поточний слайд перший, перейти до останнього
-      move($slides.length - 1); // Змінив на ($slides.length - 1), бо тепер слайдів 6
+      move($slides.length - 1);
     }
   });
 
@@ -125,4 +125,10 @@ $('.slider').each(function() {
 
   // Запустити автоматичне перемикання слайдів
   advance();
+
+  // Встановлення початкового слайду для коректного відображення
+  $slides.eq(currentIndex).css({
+    display: 'block',
+    left: 0
+  });
 });
