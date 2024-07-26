@@ -56,6 +56,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-image: url(../images/mobile-1x-335/bg.png);
+  background-repeat: no-repeat;
+  background-position: -2px 96px;
+  background-size: 390px 452px;
 }
 
 .g-one {
@@ -103,13 +108,13 @@
 .calendar {
   /* border: 1px solid #ddd; */
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.829);
+  background-color: rgba(255, 255, 255, 0.75);
   width: auto;
 }
 
 .month {
   background-color: #6d927a;
-  color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
   padding: 10px 0;
   border-top-left-radius: 8px;
@@ -119,7 +124,7 @@
 .days-of-week {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background-color: rgba(255, 255, 255, 0.829);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .day {
@@ -141,7 +146,7 @@
 
 .highlighted {
   background-color: #6d927a;
-  color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 0.75);
   box-shadow: inset 0px 4px 9px -2px rgba(0, 0, 0, 0.75);
   border-radius: 8px;
 }
