@@ -61,8 +61,9 @@ html {
 
 .mobile-tel-container {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
 .tel-link {
   display: none;
@@ -125,7 +126,7 @@ html {
   position: fixed;
   z-index: 999999;
   top: 0;
-  right: 391px;
+  left: -391px;
   width: 393px;
   height: 100%;
   visibility: visible;
@@ -223,6 +224,7 @@ html {
   transition: all 250ms linear;
   pointer-events: none;
   opacity: 1;
+  transform: translateX(200%);
 }
 
 
