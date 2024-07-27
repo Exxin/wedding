@@ -6,9 +6,9 @@ async function initMap(): Promise<void> {
     zoom: 13,
   });
 
-    const marker = new google.maps.Marker({
+    const marker = new google.maps.marker.AdvancedMarkerElement({
     position: { lat: 50.3205, lng: 28.7535 },
-    map: map,
+    map,
     title: "Вереси, Житомирська область",
   });
 }
