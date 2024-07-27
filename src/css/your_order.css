@@ -3,6 +3,32 @@
 #map {
   height: 300px;
   width: 350px;
+  box-shadow: 0px 2px 30px -3px rgba(0, 0, 0, 0.75);
+}
+
+.button-map {
+  /* display: flex; */
+  font-size: 20px;
+  border: none;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: #abd3b99a;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 3px 5px 3px 5px;
+  box-shadow: 0px 2px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+.button-box {
+  padding-top: 15px;
+}
+
+.adress-box {
+  display: flex;
+      flex-direction: column;
+        align-items: center;
+}
+.adress-box p {
+  text-align: center;
 }
 
 .your_order_test {
@@ -18,7 +44,8 @@
 
 .order-text {
   color: rgba(0, 0, 0, 0.4);
-  font-size: 22px;
+  font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .title-box{
