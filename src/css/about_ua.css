@@ -18,7 +18,7 @@
 }
 
 .about-title {
-  color: rgba(0, 0, 0, 0.4);
+  color: #6d927a;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.38;
@@ -35,7 +35,7 @@
 }
 
 .line-about {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #6d927a;
     width: 90px;
     height: 2px;
     /* margin-right: 20px; */
@@ -43,7 +43,7 @@
 }
 
 .about-text {
-    color: rgba(0, 0, 0, 0.4);
+    color: #6d927a;
 font-size: 25px;
 font-weight: 400;
 line-height: normal;
