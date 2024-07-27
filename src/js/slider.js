@@ -124,6 +124,9 @@ $('.slider').each(function() {
   });
 
   // Встановлення початкового слайду для коректного відображення
+  $slides.css({
+    display: 'none'
+  });
   $slides.eq(currentIndex).css({
     display: 'block',
     left: 0
