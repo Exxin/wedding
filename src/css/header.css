@@ -22,6 +22,7 @@ html {
   z-index: 999;
   /* background: linear-gradient(180deg, #ffffe9 91%, transparent 101%); */
   box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75);
+  background-color: #ffffe9;
 }
 
 .page-nav {
