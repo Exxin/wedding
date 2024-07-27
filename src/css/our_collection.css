@@ -323,6 +323,16 @@ a.control-next {
       width: 479px;
 }
 
+.slide:nth-of-type(7) {
+  display: block;
+  background-image: url(/images/mobile-1x-335/gallery_7.jpg);
+  background-repeat: no-repeat;
+  background-position: -47px -188px;
+  background-size: contain;
+  height: 609px;
+  width: 479px;
+}
+
 .slide_buttons {
   left: 0;
   position: absolute;

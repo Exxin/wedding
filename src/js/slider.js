@@ -123,12 +123,12 @@ $('.slider').each(function() {
     bulletArray.push($button);
   });
 
-  // Запустити автоматичне перемикання слайдів
-  advance();
-
   // Встановлення початкового слайду для коректного відображення
   $slides.eq(currentIndex).css({
     display: 'block',
     left: 0
   });
+
+  // Запустити автоматичне перемикання слайдів
+  advance();
 });
