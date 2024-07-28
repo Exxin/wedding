@@ -169,8 +169,8 @@
   display: flex;
   justify-content: space-around;
   width: 80%;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  /* padding-top: 10px; */
+  padding-bottom: 25px;
 }
 
 .time-item {
@@ -178,15 +178,15 @@
 }
 
 .timer {
-  font-size: 33px;
-  color: ffffe9;
+  font-size: 45px;
+  color: #ffffe9;
   text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.75);
 }
 
 .label {
   display: block;
-  margin-top: 5px;
-  font-size: 1em;
-  color: ffffe9;
+  /* margin-top: 5px; */
+  font-size: 18px;
+  color: #ffffe9;
   text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.75);
 }

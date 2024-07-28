@@ -1,6 +1,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+.logo {
+  color: #15512a;
+  font-size: 29px;
+  line-height: 1.1;
+  height: 0px;
+  padding-top: 3px;
+}
+
 .header-container {
   display: flex;
   background-color: #ffffe9;
