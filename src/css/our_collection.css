@@ -240,7 +240,7 @@ a.control-next {
   margin: 0 auto;
   max-width: 375px;
   box-shadow: 2px 4px 19px 2px rgba(0, 0, 0, 0.75);
-  border: 5px solid #6d927a;
+  /* border: 5px solid #6d927a; */
 }
 
 .slide_viewer {
