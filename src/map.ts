@@ -14,6 +14,7 @@ async function initMap(): Promise<void> {
     zoomControl: false,
     backgroundColor: '#6d927a',
     draggable: true,
+    // gestureHandling: 'greedy',
   });
 
   const marker = new AdvancedMarkerElement({
