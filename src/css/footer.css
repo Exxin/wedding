@@ -13,8 +13,8 @@
   padding-top: 200px;
 }
 
-.write {
-
+.write a{
+  text-decoration: underline;
 }
 
 .foot-list-box {
