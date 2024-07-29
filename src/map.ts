@@ -14,24 +14,6 @@ async function initMap(): Promise<void> {
     zoomControl: false,
     backgroundColor: '#6d927a',
     draggable: true,
-    gestureHandling: 'greedy',
-        styles: [
-      {
-        featureType: 'all',
-        elementType: 'labels',
-        stylers: [{ visibility: 'on' }]
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry',
-        stylers: [{ color: '#ffffff' }]
-      },
-      {
-        featureType: 'water',
-        elementType: 'geometry',
-        stylers: [{ color: '#c0e4f3' }]
-      }
-    ],
   });
 
   const marker = new AdvancedMarkerElement({
