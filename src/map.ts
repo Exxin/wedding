@@ -12,13 +12,8 @@ async function initMap(): Promise<void> {
   const marker = new AdvancedMarkerElement({
     position: { lat: 50.32074, lng: 28.75360 },
     map,
-    title: "Hello World!",
+    title: "Вереси, Житомирська область, Ресторан-готель Губернія",
   });
-  //   new google.maps.Marker({
-  //   position: { lat: 50.32074, lng: 28.75360 },
-  //   map,
-  //   title: "Hello World!",
-  // });
 }
 
 initMap();
