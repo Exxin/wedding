@@ -13,6 +13,7 @@ async function initMap(): Promise<void> {
     disableDefaultUI: false,
     zoomControl: false,
     backgroundColor: '#6d927a',
+    draggable: true,
     gestureHandling: 'greedy',
         styles: [
       {
