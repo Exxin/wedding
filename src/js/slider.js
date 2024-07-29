@@ -1,5 +1,5 @@
 // Ініціалізація слайдера
-$('.slider').each(function() {
+$('.slider').each(function () {
   // $this зберігає поточний слайдер
   var $this = $(this);
   // Знаходить контейнер групи слайдів всередині поточного слайдера
@@ -42,28 +42,31 @@ $('.slider').each(function() {
     // Встановлення позиції для нового слайда і відображення його
     $slides.eq(newIndex).css({
       display: 'block',
-      left: slideLeft
+      left: slideLeft,
     });
 
     // Анімація групи слайдів
-    $group.animate({
-      left: animateLeft
-    }, function() {
-      // Сховати поточний слайд після анімації
-      $slides.eq(currentIndex).css({
-        display: 'none'
-      });
-      // Встановити новий слайд в початкову позицію
-      $slides.eq(newIndex).css({
-        left: 0
-      });
-      // Відновити початкову позицію для групи слайдів
-      $group.css({
-        left: 0
-      });
-      // Оновлення індексу поточного слайда
-      currentIndex = newIndex;
-    });
+    $group.animate(
+      {
+        left: animateLeft,
+      },
+      function () {
+        // Сховати поточний слайд після анімації
+        $slides.eq(currentIndex).css({
+          display: 'none',
+        });
+        // Встановити новий слайд в початкову позицію
+        $slides.eq(newIndex).css({
+          left: 0,
+        });
+        // Відновити початкову позицію для групи слайдів
+        $group.css({
+          left: 0,
+        });
+        // Оновлення індексу поточного слайда
+        currentIndex = newIndex;
+      }
+    );
   }
 
   // Функція для автоматичного перемикання слайдів
@@ -71,21 +74,21 @@ $('.slider').each(function() {
     // Очистити попередній таймер
     clearTimeout(timeout);
     // Встановити новий таймер на 10 секунд
-    timeout = setTimeout(function() {
+    timeout = setTimeout(function () {
       // Якщо поточний слайд не останній, перейти до наступного
-      if (currentIndex < ($slides.length - 1)) {
+      if (currentIndex < $slides.length - 1) {
         move(currentIndex + 1);
       } else {
         // Якщо поточний слайд останній, перейти до першого
         move(0);
       }
-    }, 7000);
+    }, 10000);
   }
 
   // Обробник подій для кнопки "вперед"
-  $('.next_btn').on('click', function() {
+  $('.next_btn').on('click', function () {
     // Якщо поточний слайд не останній, перейти до наступного
-    if (currentIndex < ($slides.length - 1)) {
+    if (currentIndex < $slides.length - 1) {
       move(currentIndex + 1);
     } else {
       // Якщо поточний слайд останній, перейти до першого
@@ -94,7 +97,7 @@ $('.slider').each(function() {
   });
 
   // Обробник подій для кнопки "назад"
-  $('.previous_btn').on('click', function() {
+  $('.previous_btn').on('click', function () {
     // Якщо поточний слайд не перший, перейти до попереднього
     if (currentIndex !== 0) {
       move(currentIndex - 1);
@@ -105,7 +108,7 @@ $('.slider').each(function() {
   });
 
   // Створення кнопок-пуль для кожного слайда
-  $.each($slides, function(index) {
+  $.each($slides, function (index) {
     // Створити кнопку-пулю
     var $button = $('<a class="slide_btn">&bull;</a>');
 
@@ -115,9 +118,11 @@ $('.slider').each(function() {
     }
 
     // Додати обробник подій для натискання на пулю
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
+    $button
+      .on('click', function () {
+        move(index);
+      })
+      .appendTo('.slide_buttons');
 
     // Додати пулю до масиву bulletArray
     bulletArray.push($button);
@@ -125,13 +130,32 @@ $('.slider').each(function() {
 
   // Встановлення початкового слайду для коректного відображення
   $slides.css({
-    display: 'none'
+    display: 'none',
   });
   $slides.eq(currentIndex).css({
     display: 'block',
-    left: 0
+    left: 0,
   });
 
   // Запустити автоматичне перемикання слайдів
   advance();
+
+  // Додати обробник свайпів
+  $this.swipe({
+    swipeLeft: function () {
+      if (currentIndex < $slides.length - 1) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    },
+    swipeRight: function () {
+      if (currentIndex !== 0) {
+        move(currentIndex - 1);
+      } else {
+        move($slides.length - 1);
+      }
+    },
+    threshold: 0,
+  });
 });
