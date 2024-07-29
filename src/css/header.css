@@ -162,7 +162,7 @@ html {
 .mobile-tel-links {
     display: flex;
       gap: 10px;
-      padding-top: 30px;
+      padding-top: 90px;
       padding-right: 15px;
       padding-left: 20px;
       flex-direction: column;
