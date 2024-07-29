@@ -11,10 +11,12 @@
 
 .copyright {
   padding-top: 200px;
+  word-spacing: 3px;
 }
 
 .write a{
   text-decoration: underline;
+  word-spacing: 3px;
 }
 
 .foot-list-box {
