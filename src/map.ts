@@ -11,7 +11,7 @@ async function initMap(): Promise<void> {
     streetViewControl: false,
     fullscreenControl: true,
     disableDefaultUI: false,
-    zoomControl: false,
+    zoomControl: true,
     backgroundColor: '#6d927a',
     draggable: true,
     // gestureHandling: 'greedy',
