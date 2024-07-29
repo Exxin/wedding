@@ -104,4 +104,64 @@
       margin: 0 auto;
     }
   }
-/* ======== MOBILE========= */
+/* ======== list========= */
+            .timeline {
+              display: flex;
+                flex-direction: column;
+                position: relative;
+                padding-left: 0px;
+                margin: 20px 0;
+            }
+
+            .timeline::before {
+              content: '';
+                position: absolute;
+                left: 76px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #6d927a;
+            }
+
+            .timeline-item {
+              display: flex;
+              align-items: center;
+              margin-bottom: 20px;
+              position: relative;
+            }
+
+            .timeline-item:last-child {
+              margin-bottom: 0;
+            }
+
+            .timeline-time {
+              color: #6d927a;
+              width: 60px;
+              text-align: right;
+              margin-right: 20px;
+              /* font-weight: bold; */
+              font-size: 26px;
+            }
+
+            .timeline-content {
+              color: #6d927a;
+              padding: 10px 20px;
+              border-radius: 4px;
+              position: relative;
+              flex: 1;
+              font-size: 26px;
+            }
+
+            .timeline-content::before {
+                content: '';
+                  position: absolute;
+                  left: -8px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 10px;
+                  height: 10px;
+                  background: #6d927a;
+                  border: 3px solid #ffffe9;
+                  border-radius: 50%;
+                  box-shadow: 0 0 0 2px #6d927a;
+            }
