@@ -7,6 +7,30 @@ async function initMap(): Promise<void> {
     center: { lat: 50.320, lng: 28.753 },
     zoom: 13,
     mapId: "DEMO_MAP_ID",
+    mapTypeId: 'terrain',
+    streetViewControl: false,
+    fullscreenControl: true,
+    disableDefaultUI: false,
+    zoomControl: false,
+    backgroundColor: '#6d927a',
+    gestureHandling: 'greedy',
+        styles: [
+      {
+        featureType: 'all',
+        elementType: 'labels',
+        stylers: [{ visibility: 'on' }]
+      },
+      {
+        featureType: 'road',
+        elementType: 'geometry',
+        stylers: [{ color: '#ffffff' }]
+      },
+      {
+        featureType: 'water',
+        elementType: 'geometry',
+        stylers: [{ color: '#c0e4f3' }]
+      }
+    ],
   });
 
   const marker = new AdvancedMarkerElement({
