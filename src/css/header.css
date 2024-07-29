@@ -182,7 +182,6 @@ html {
 .tel-link-mobile {
   font-size: 22px;
   line-height: 1.16;
-  text-transform: uppercase;
   display: flex;
   color: #1c2225;
   border-radius: 15px;
