@@ -239,7 +239,7 @@ html {
 
 .scroll-up-link {
   fill: #15512a;
-  border: 1px solid #15512a;
+ /* border: 1px solid #15512a;*/
   border-radius: 60px;
   background-color: rgba(150, 148, 148, 0.459);
   padding: 10px 12px;
