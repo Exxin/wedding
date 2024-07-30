@@ -76,7 +76,7 @@ img {
 .collect {
     padding-top: 18px;
     /* height: 430px; */
-      padding-bottom: 20px;
+      padding-bottom: 40px;
 }
 
 .collect-description {
@@ -118,7 +118,7 @@ img {
   width: 90px;
   height: 2px;
   margin-right: 20px;
-  margin-bottom: 7px;
+  margin-bottom: 37px;
 }
 
 .collect-title {
@@ -130,7 +130,7 @@ img {
     letter-spacing: -0.03em;
     white-space: nowrap;
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     margin-left: 20px;
     word-spacing: 3px;
 }
