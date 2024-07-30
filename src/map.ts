@@ -5,7 +5,7 @@ async function initMap(): Promise<void> {
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MapsLibrary;
   map = new Map(document.getElementById("map") as HTMLElement, {
     center: { lat: 50.32067, lng: 28.75377 },
-    zoom: 10,
+    zoom: 10.5,
     mapId: "DEMO_MAP_ID",
     mapTypeId: 'terrain',
     streetViewControl: false,
