@@ -10,6 +10,22 @@
   border: 2px solid #6d927a;
   box-shadow: 0px 2px 22px -4px rgba(0, 0, 0, 0.75);
 }
+
+.gmnoprint {
+  margin: 0;
+}
+
+.gm-control-active .gm-fullscreen-control {
+  margin: 0;
+}
+
+div.gmnoprint {
+ visibility: hidden;
+}
+div.gmnoscreen {
+  visibility: hidden;
+}
+
 .button-map {
   /* display: flex; */
   font-size: 20px;
