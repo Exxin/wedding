@@ -15,8 +15,8 @@
   margin: 0;
 }
 
-div.gmnoprint {
- visibility: hidden;
+.gm-style-mtc {
+    visibility: hidden;
 }
 div.gmnoscreen {
   visibility: hidden;
