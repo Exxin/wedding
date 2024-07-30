@@ -21,6 +21,7 @@ async function initMap(): Promise<void> {
     position: { lat: 50.32067, lng: 28.75377 },
     map,
     title: "Вереси, Житомирська область, Ресторан-готель Губернія",
+    zoom: 10.5,
   });
 }
 
