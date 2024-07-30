@@ -27,7 +27,7 @@ div.gmnoscreen {
   border: 1px solid #6d927a;
   border-radius: 5px;
   padding: 3px 5px 3px 5px;
-  box-shadow: 0px 2px 14px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 11px -2px rgba(0, 0, 0, 0.75);
 }
 
 .button-box {
