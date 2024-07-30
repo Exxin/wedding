@@ -22,6 +22,20 @@ async function initMap(): Promise<void> {
     map,
     title: "Вереси, Житомирська область, Ресторан-готель Губернія",
     zoom: 10.5,
+    label: {
+      text: "Губернія",
+      color: "black",
+      fontSize: "14px",
+      fontWeight: "bold",
+    },
+    icon: {
+      url: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+      scaledSize: new google.maps.Size(32, 32), // Зміна розміру іконки
+      origin: new google.maps.Point(0, 0), // Початкова точка іконки
+      anchor: new google.maps.Point(16, 32), // Якірна точка іконки
+    },
+      animation: google.maps.Animation.BOUNCE, // Анімація появи маркера
+      optimized: true, // Оптимізація для високопродуктивного рендерингу
   });
 }
 
