@@ -11,12 +11,8 @@
   box-shadow: 0px 2px 22px -4px rgba(0, 0, 0, 0.75);
 }
 
-.gmnoprint {
-  margin: 0;
-}
-
 .gm-style-mtc {
-    visibility: hidden;
+  visibility: hidden;
 }
 div.gmnoscreen {
   visibility: hidden;
@@ -27,7 +23,7 @@ div.gmnoscreen {
   font-size: 20px;
   border: none;
   color: #6d927a;
-  background-color: #abd3b99a;
+  /* background-color: #abd3b99a; */
   border: 1px solid #6d927a;
   border-radius: 5px;
   padding: 3px 5px 3px 5px;
