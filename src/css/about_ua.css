@@ -35,13 +35,13 @@
 }
 
 .about-text {
-    color: #6d927a;
-font-size: 25px;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.04em;
-margin-bottom: 20px;
-word-spacing: 3px;
+  color: #6d927a;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+  word-spacing: 3px;
 }
 
 .about-box picture img{
@@ -50,5 +50,35 @@ word-spacing: 3px;
 
 .about-box picture{
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+
+  /* .about {
+    padding: 0 0;
+    width: 1280px;
+  } */
+  .container {
+    padding: 0 0;
+    width: 1210px;
+  }
+
+  .about-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .pict {
+    width: 3210px;
+  }
+
+  picture {
+    margin-top: 30px;
+  }
+
+  .about-text {
+    font-size: 28px;
+  }
 }
 

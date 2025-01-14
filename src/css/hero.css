@@ -192,3 +192,28 @@
   color: #ffffe9;
   text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.75);
 }
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    width: 1210px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding-bottom: 30px;
+    margin: auto;
+  }
+
+  .container.hero-box {
+    width: 1210px;
+  }
+
+  .head-first-box {
+    width: 640px;
+    height: 600px;
+  }
+
+  .head-second-box {
+    width: 640px;
+    height: 600px;
+    justify-content: space-between;
+  }
+}

@@ -52,7 +52,7 @@ img {
 }
 
 .container.collect-box {
-  width: 100%;
+  /* width: 100%; */
   padding: 0 0 0 0;
   height: 440px;
 }
@@ -117,7 +117,7 @@ img {
   background-color: #fcf9f99c;
   width: 90px;
   height: 2px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   margin-bottom: 37px;
 }
 
@@ -131,7 +131,7 @@ img {
     white-space: nowrap;
     text-align: left;
     padding-bottom: 40px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     word-spacing: 3px;
 }
 
@@ -408,6 +408,8 @@ a.slide_btn {
 }
 
 /* ================ 1280px ================== */
-
-/* ================ 1440px ================== */
-
+@media screen and (min-width: 1280px) {
+  .directional_nav {
+    max-width: 470px;
+  }
+}

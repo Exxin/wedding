@@ -11,6 +11,13 @@
   box-shadow: 0px 2px 22px -4px rgba(0, 0, 0, 0.75);
 }
 
+.order-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 .gm-style-mtc {
   visibility: hidden;
 }
@@ -186,4 +193,20 @@ div.gmnoscreen {
                   border: 3px solid #ffffe9;
                   border-radius: 50%;
                   box-shadow: 0 0 0 2px #6d927a;
+            }
+
+            @media screen and (min-width: 1280px) {
+              #map {
+                width: 600px;
+              }
+
+              .order-wrapper {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+              }
+
+              .order-box {
+                gap: 15px;
+              }
             }

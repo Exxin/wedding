@@ -44,25 +44,25 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
     width: 768px;
   }
-}
+} */
 
 @media screen and (min-width: 1280px) {
   .container {
-    padding: 0 100px;
-    width: 1280px;
+    padding: 0 0;
+    width: 1210px;
   }
 }
 
 
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
   }
 
-}
+} */
