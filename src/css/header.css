@@ -132,14 +132,14 @@ html {
 
 
 /* =============== Mobile menu ==================== */
-.mobile-menu {
+/* .mobile-menu {
   box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75);
   background-color: #abd3b9a3;
   position: fixed;
   z-index: 4;
-  top: 0px;
-  left: -393px;
-  width: 393px;
+  top: -100%;
+  left: 0;
+  width: 100%;
   height: 100%;
   visibility: visible;
   overflow: auto;
@@ -147,7 +147,7 @@ html {
   pointer-events: auto;
   backdrop-filter: blur(10px);
 
-  transform: translateX(100%);
+  transform: translateY(0);
   transition: transform 250ms linear;
   background-image: url(../images/mobile-1x-335/bg.png);
   background-size: 361px 454px;
@@ -156,8 +156,45 @@ html {
 }
 
 .mobile-menu.is-open {
-  transform: translateX(0%);
+  transform: translateY(100%);
   transition: all 250ms linear;
+} */
+
+.mobile-menu {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: 1000px;
+  padding-top: 100px;
+  padding-left: 20px;
+  box-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75);
+  background-color: #abd3b987;
+  backdrop-filter: blur(10px);
+  background-image: url(../images/mobile-1x-335/bg.png);
+  background-size: 361px 454px;
+  background-repeat: no-repeat;
+  background-position: -58px 69px;
+  transform: translateY(0%);
+  transition: transform 0.5s;
+  z-index: 1;
+}
+.mobile-menu.is-open {
+  transform: translateY(0);
+}
+
+.is-open-mob {
+  opacity: 2;
+  visibility: hidden;
+  pointer-events: auto;
+  transition: all 250ms linear;
+}
+
+.mobile-menu.is-open-mob {
+  transition: all 250ms linear;
+  pointer-events: none;
+  opacity: 1;
+  transform: translateY(-100%);
 }
 
 /* =============================================================== */
@@ -226,20 +263,6 @@ html {
   margin-right: 20px;
 }
 
-.is-open-mob {
-  opacity: 2;
-  visibility: hidden;
-  pointer-events: auto;
-  transition: all 250ms linear;
-}
-
-.mobile-menu.is-open-mob {
-  transition: all 250ms linear;
-  pointer-events: none;
-  opacity: 1;
-  transform: translateX(200%);
-}
-
 
 .scroll-up-link {
   fill: #15512a;
@@ -278,6 +301,11 @@ html {
   .container {
     padding: 0 0;
     width: 1280px;
+  }
+
+  .mobile-menu {
+    /* height: 500px; */
+    width: 500px;
   }
 
   .mobile-social {
