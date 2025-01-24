@@ -73,8 +73,15 @@
     width: 3210px;
   }
 
+  /* .hero:hover > :not(:hover) {
+    filter: blur(5px);
+    opacity: 1.5;
+  } */
+
   picture {
     margin-top: 30px;
+    /* filter: blur(5px);
+    opacity: 1.5; */
   }
 
   .about-text {
