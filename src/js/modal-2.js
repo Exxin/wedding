@@ -8,7 +8,7 @@
     menuLinksThree: document.querySelector('[nav-link-mobile-close-3]'),
     menuLinksFour: document.querySelector('[nav-link-mobile-close-4]'),
 
-    headerContainer: document.querySelector('.container.header-container'),
+    headerContainer: document.querySelector('[blur]'),
   };
 
   refsTwo.openModalBtn.addEventListener('click', toggleModal);
