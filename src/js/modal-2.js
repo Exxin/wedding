@@ -8,7 +8,7 @@
     menuLinksThree: document.querySelector('[nav-link-mobile-close-3]'),
     menuLinksFour: document.querySelector('[nav-link-mobile-close-4]'),
 
-    headerContainer: document.querySelector('[blur]'),
+    headerContainer: document.querySelector('[blur-close]'),
   };
 
   refsTwo.openModalBtn.addEventListener('click', toggleModal);
@@ -19,8 +19,8 @@
 
   function toggleModal() {
     refsTwo.modal.classList.toggle('is-open-mob');
+
     refsTwo.headerContainer.classList.toggle('blur');
   }
 })();
-// ============================================================
 // ============================================================
