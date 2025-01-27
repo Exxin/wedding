@@ -8,11 +8,13 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #191919;
+  background-color: #fcf9f9;
+  box-shadow: inset 0px 0px 5px 0px #3d3d3d;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #15512a;
+  box-shadow: 0px 0px 12px 3px #3d3d3d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -55,11 +57,11 @@ html {
   z-index: 999;
   /* background: linear-gradient(180deg, #ffffe9 91%, transparent 101%); */
   /* box-shadow: 0px 8px 23px -8px rgba(0, 0, 0, 0.75); */
-  box-shadow: none;
   /* background-color: #ffffe9; */
 }
-
-
+.mobile-social .nav-list-mobile {
+  display: none;
+}
 
 .page-nav {
   display: flex;
@@ -341,6 +343,19 @@ html {
     width: 1280px;
     justify-content: space-between;
     padding: 0px 40px;
+  }
+
+  .solid-menu-btn {
+    display: none;
+  }
+
+  .mobile-social .nav-list-mobile {
+    display: flex;
+  }
+
+  .nav-list-mobile {
+    flex-direction: row;
+    margin-top: 0px;
   }
 
   .header-list{
