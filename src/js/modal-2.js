@@ -8,6 +8,8 @@
     menuLinksThree: document.querySelector('[nav-link-mobile-close-3]'),
     menuLinksFour: document.querySelector('[nav-link-mobile-close-4]'),
 
+    menuBtn: document.querySelector('.menu-btn'),
+
     headerContainer: document.querySelector('[blur-close]'),
   };
 
@@ -19,6 +21,8 @@
 
   function toggleModal() {
     refsTwo.modal.classList.toggle('is-open-mob');
+
+    refsTwo.menuBtn.classList.toggle('active');
 
     refsTwo.headerContainer.classList.toggle('blur');
   }
