@@ -234,6 +234,16 @@ a.control-next {
         height: auto;
         width: 100%;
     }
+
+    .collect .swiper-container {
+      height: calc(70vh - 120px);
+      margin: 0 20px;
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      z-index: 0;
+    }
 }
 
 /* ================ slider-v.2 ================== */
