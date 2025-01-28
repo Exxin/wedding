@@ -261,14 +261,73 @@ a.control-next {
   background-position: center;
 }
 
+/* .one-pic {
+  background-size: cover;
+  background-position: center;
+}
+.two-pic {
+  background-size: cover;
+  background-position: center;
+}
+.three-pic {
+  background-size: 100%;
+  background-position: 0px -625px;
+}
+.four-pic {
+  background-size: 100%;
+  background-position: 0px -400px;
+}
+.five-pic {
+  background-size: cover;
+  background-position: center;
+}
+.six-pic {
+  background-size: 109%;
+  background-position: -52px -262px;
+}
+.seven-pic {
+  background-size: 100%;
+  background-position: 0px 0px;
+} */
+
+
 /* ================ 1280px ================== */
 @media screen and (min-width: 1280px) {
   .directional_nav {
     max-width: 470px;
   }
 
-  .swiper-container {
+  .collect .swiper-container {
     height: calc(100vh - 120px);
     margin: 60px;
+  }
+
+  .one-pic {
+    background-size: cover;
+    background-position: center;
+  }
+  .two-pic {
+    background-size: cover;
+    background-position: center;
+  }
+  .three-pic {
+    background-size: 100%;
+    background-position: 0px -625px;
+  }
+  .four-pic {
+    background-size: 100%;
+    background-position: 0px -400px;
+  }
+  .five-pic {
+    background-size: cover;
+    background-position: center;
+  }
+  .six-pic {
+    background-size: 109%;
+    background-position: -52px -262px;
+  }
+  .seven-pic {
+    background-size: 100%;
+    background-position: 0px 0px;
   }
 }
