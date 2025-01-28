@@ -239,7 +239,12 @@ a.control-next {
 /* ================ slider-v.2 ================== */
 .swiper-container {
   height: calc(70vh - 120px);
-  margin: 60px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 0;
 }
 
 .swiper-slide {
