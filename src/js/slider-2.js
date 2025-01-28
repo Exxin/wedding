@@ -1,50 +1,23 @@
-jQuery(document).ready(function ($) {
 
-  // $('#checkbox').change(function(){
-  //   setInterval(function () {
-  //       moveRight();
-  //   }, 4000);
-  // });
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 5,
+  spaceBetween: 0,
+  centeredSlides: true,
+  loop: true,
+  simulateTouch: 'ontouchstart' in window || navigator.maxTouchPoints > 0,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})
 
-	var slideCount = $('#slider .collect-list .collect-item').length;
-	var slideWidth = $('#slider .collect-list .collect-item').width();
-	var slideHeight = $('#slider .collect-list .collect-item').height();
-	var sliderUlWidth = slideCount * slideWidth;
+const calculateHeight = () => {
+  const swiperSlideElements = Array.from(document.querySelectorAll('.swiper .swiper-slide'))
+  if (!swiperSlideElements.length) return
+  const width = swiperSlideElements[0].getBoundingClientRect().width
+  const height = Math.round(width / (16 / 9))
+  swiperSlideElements.map(element => element.style.height = `${height}px`)
+}
 
-	$('#slider').css({ width: slideWidth, height: slideHeight });
-
-	$('#slider .collect-list').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-
-    $('#slider .collect-list .collect-item:last-child').prependTo('#slider .collect-list');
-
-    function moveLeft() {
-        $('#slider .collect-list').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider .collect-list .collect-item:last-child').prependTo('#slider .collect-list');
-            $('#slider .collect-list').css('left', '');
-        });
-    };
-
-    function moveRight() {
-        $('#slider .collect-list').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider .collect-list .collect-item:first-child').appendTo('#slider .collect-list');
-            $('#slider .collect-list').css('left', '');
-        });
-    };
-
-      // setInterval(function () {
-      //   moveRight();
-      // }, 5000);
-
-    $('a.control-prev').click(function () {
-        moveLeft();
-    });
-
-    $('a.control-next').click(function () {
-        moveRight();
-    });
-
-});
+document.addEventListener("DOMContentLoaded", calculateHeight)
+addEventListener('resize', calculateHeight)

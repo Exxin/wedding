@@ -54,7 +54,7 @@ img {
 .container.collect-box {
   /* width: 100%; */
   padding: 0 0 0 0;
-  height: 440px;
+  /* height: 440px; */
 }
 
 /* .collect-list {
@@ -237,179 +237,33 @@ a.control-next {
 }
 
 /* ================ slider-v.2 ================== */
-.slider {
-  margin: 0 auto;
-  max-width: 375px;
-  box-shadow: 2px 4px 19px 2px rgba(0, 0, 0, 0.75);
-  /* border: 5px solid #6d927a; */
+.swiper-container {
+  height: calc(70vh - 120px);
+  margin: 60px;
 }
 
-.slide_viewer {
-  height: 320px;
+.swiper-slide {
   overflow: hidden;
-  position: relative;
 }
 
-.slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.slide {
-  display: none;
-  height: 100%;
+.slide-inner {
   position: absolute;
   width: 100%;
-}
-
-.slide:first-child {
-  display: block;
-}
-
-.slide:nth-of-type(1) {
-  display: block;
-  background-image: url(/images/mobile-1x-335/gallery_1.jpg);
-  background-repeat: no-repeat;
-  background-position: -59px -4px;
-  background-size: contain;
-  height: 375px;
-  width: 488px;
-}
-
-.slide:nth-of-type(2) {
-  display: block;
-  background-image: url(/images/mobile-1x-335/gallery_2.jpg);
-  background-repeat: no-repeat;
-  background-position: -43px -5px;
-  background-size: contain;
-  height: 375px;
-  width: 488px;
-}
-
-.slide:nth-of-type(3) {
-  display: block;
-  background-image: url(/images/mobile-1x-335/gallery_3.jpg);
-  background-repeat: no-repeat;
-  background-position: -43px -198px;
-  background-size: contain;
-  height: 748px;
-  width: 488px;
-}
-
-.slide:nth-of-type(4) {
-  display: block;
-  background-image: url(/images/mobile-1x-335/gallery_4.jpg);
-  background-repeat: no-repeat;
-  background-position: -1px -149px;
-  background-size: contain;
-  height: 625px;
-  width: 488px;
-}
-.slide:nth-of-type(5) {
-  display: block;
-  background-image: url(/images/mobile-1x-335/gallery_5.jpg);
-  background-repeat: no-repeat;
-  background-position: -79px -5px;
-  background-size: contain;
-  height: 375px;
-  width: 488px;
-}
-.slide:nth-of-type(6) {
-  display: block;
-  background-image: url(/images/mobile-1x-335/gallery_6.jpg);
-    background-repeat: no-repeat;
-      background-position: -82px 0px;
-      background-size: contain;
-      height: 609px;
-      width: 479px;
-}
-
-.slide:nth-of-type(7) {
-  display: block;
-  background-image: url(/images/mobile-1x-335/gallery_7.jpg);
-  background-repeat: no-repeat;
-  background-position: -47px -188px;
-  background-size: contain;
-  height: 609px;
-  width: 479px;
-}
-
-.slide_buttons {
+  height: 100%;
   left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-}
-
-a.slide_btn {
-  border-radius: 50%;
-  color: #474544;
-  font-size: 42px;
-  margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  /* text-shadow: 2px 7px 23px 4px rgba(0, 0, 0, 0.75); */
-    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.75);
-}
-
-.slide_btn.active {
-  color: #6d927a;
-  cursor: pointer;
-}
-
-.directional_nav {
-  height: 355px;
-  margin: 0 auto;
-  max-width: 364px;
-  position: relative;
-  top: -340px;
-}
-
-.previous_btn {
-  fill: #FCF9F9;
-  bottom: 0;
-  left: 0px;
-  margin: auto;
-  position: absolute;
   top: 0;
-}
-
-.next_btn {
-  fill: #FCF9F9;
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  right: 0px;
-  top: 0;
-}
-
-.previous_btn,
-.next_btn {
-  /* background-color: #15512a9a; */
-  border-radius: 50%;
-  cursor: pointer;
-  height: 40px;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  width: 40px;
-}
-
-.previous_btn:hover,
-.next_btn:hover {
-  opacity: 1;
+  background-size: cover;
+  background-position: center;
 }
 
 /* ================ 1280px ================== */
 @media screen and (min-width: 1280px) {
   .directional_nav {
     max-width: 470px;
+  }
+
+  .swiper-container {
+    height: calc(100vh - 120px);
+    margin: 60px;
   }
 }
