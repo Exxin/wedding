@@ -290,15 +290,15 @@ a.control-next {
 .five-pic {
   background-size: cover;
   background-position: center;
-}
+} */
 .six-pic {
-  background-size: 109%;
-  background-position: -52px -262px;
+  background-size: cover;
+  background-position: 0px -37px;
 }
 .seven-pic {
-  background-size: 100%;
+  background-size: cover;
   background-position: 0px 0px;
-} */
+}
 
 
 /* ================ 1280px ================== */
